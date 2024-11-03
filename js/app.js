@@ -3590,11 +3590,6 @@
             if (vatStep2Element) vatStep2Element.classList.add("_open");
         }));
     }));
-    const actionsElement = document.querySelector(".actions");
-    if (actionsElement) actionsElement.addEventListener("click", (function() {
-        const allActionsElement = document.querySelector("#all-actions");
-        if (allActionsElement) allActionsElement.classList.toggle("_open");
-    }));
     const pageElement = document.querySelector(".page");
     if (pageElement) pageElement.addEventListener("click", (function() {
         const allNotificationsElement = document.querySelector(".all-notifications");

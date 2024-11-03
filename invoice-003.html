@@ -5,8 +5,8 @@
 	<title>Invoice 003</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css?_v=20241102205321" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241102205321">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css?_v=20241103151104" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241103151104">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -171,283 +171,270 @@
 
 	<div class="container main-container">
 		<div class="row">
-			<div class="col-12 pt-3 pb-2 d-flex justify-content-between">
+			<div class="col-12 pt-4 pb-4 d-flex justify-content-between">
 				<div class="main-title__title fw-bold">
-					<h1>Invoice 001</h1>
+					<h1>Invoice 003</h1>
 				</div>
-				<div class="actions">
-					<span>Actions</span>
-					<img src="img/icon-actions.svg" alt="">
 
-					<div id="all-actions" class="rounded"></div>
+				<div class="dropdown actions">
+					<div class="d-flex gap-2 align-items-center pt-2 pb-2" data-bs-toggle="dropdown">
+						<span>Actions</span>
+						<img src="img/icon-actions.svg" alt="">
+					</div>
+					<div id="all-actions" class="dropdown-menu dropdown-menu-end rounded"></div>
 				</div>
 			</div>
 		</div>
 
-		<!-- SECTION CONTENT -->
-		<section class="content">
-			<div class="content__container">
-				<div class="content__blocks">
-
-					<div class="content__col content__col--wide">
-
-						<div class="content-block blue-border rounded">
-							<div class="top-line d-flex justify-content-between align-items-start border-bottom pb-3 mb-3 top-line--invoice">
-								<div class="top-line__col fw-medium">
-									<img class="logo-company" src="img/logo-company.svg" alt="company">
-								</div>
-								<div class="top-line__col fw-medium">
-									<div class="top-line__title">INVOICE</div>
-
-									<div class="invoice-info fw-medium">
-										<div class="invoice-info__row">
-											<div class="invoice-info__col fw-semibold">Invoice :</div>
-											<div class="invoice-info__col">001</div>
-										</div>
-										<div class="invoice-info__row">
-											<div class="invoice-info__col fw-semibold">Due date :</div>
-											<div class="invoice-info__col">11.02.2023</div>
-										</div>
-										<div class="invoice-info__row">
-											<div class="invoice-info__col fw-semibold">Inv date :</div>
-											<div class="invoice-info__col">15.01.2023</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="invoice-row">
-								<div class="invoice-row__col fw-medium">
-									<div class="invoice-row__label fw-medium">From :</div>
-									<p><strong>Guy Hawkins</strong></p>
-									<p>220 Dey Street</p>
-									<p>Pretoria</p>
-									<p>00081</p>
-									<p>VAT No : 000816</p>
-								</div>
-								<div class="invoice-row__col fw-medium">
-									<div class="invoice-row__label fw-medium">To :</div>
-									<p><strong>Harobit Tech</strong></p>
-									<p>ROB Boulevard</p>
-									<p>5th Floor</p>
-								</div>
-							</div>
-
-							<div class="central-text fw-semibold">
-								Re: Guy Hawkins // Code Case No: 661
-							</div>
-
-							<div class="grey-line mb-4"></div>
-
-							<div class="wrapper-scroll">
-								<table class="table table-create-invoice table-invoice">
-									<thead class="fw-semibold">
-										<tr>
-											<th>Date</th>
-											<th>Description</th>
-											<th>Rate</th>
-											<th>Hrs</th>
-											<th>Total</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>
-												11.05.2014
-											</td>
-											<td>
-												Consulting with client
-											</td>
-											<td class="text-nowrap">
-												R 200.00
-											</td>
-											<td class="text-nowrap">
-												1 : 00
-											</td>
-											<td class="text-nowrap">
-												R 200.00
-											</td>
-										</tr>
-
-										<tr>
-											<td>
-												14.05.2014
-											</td>
-											<td>
-												Afterday consult
-											</td>
-											<td class="text-nowrap">
-												R 20 000.00
-											</td>
-											<td class="text-nowrap">
-												1 Day
-											</td>
-											<td class="text-nowrap">
-												R 20 000.00
-											</td>
-										</tr>
-
-										<tr>
-											<td>
-												15.05.2021
-											</td>
-											<td>
-												Reason for not making payment in respect of those invoices was due to the fact that the plaintiff did not perform or render any services
-											</td>
-											<td class="text-nowrap">
-												R 250.00
-											</td>
-											<td class="text-nowrap">
-												2 : 00
-											</td>
-											<td class="text-nowrap">
-												R 500.00
-											</td>
-										</tr>
-
-										<tr>
-											<td>
-												16.05.2021
-											</td>
-											<td>
-												Petrol
-											</td>
-											<td class="text-nowrap">
-												R 100.00
-											</td>
-											<td class="text-nowrap">
-												-
-											</td>
-											<td class="text-nowrap">
-												R 100.00
-											</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-
-
-
-							<div class="summary mt-4">
-								<div class="summary__content">
-									<div class="summary__row fw-medium">
-										<div class="summary__col">Sub Total</div>
-										<div class="summary__col summary__col--right">R 20 800.00</div>
-									</div>
-									<div class="summary__row fw-medium">
-										<div class="summary__col">VAT 0%</div>
-										<div class="summary__col summary__col--right">R 0.00</div>
-									</div>
-									<div class="grey-line"></div>
-									<div class="summary__row fw-bold">
-										<div class="summary__col">Total</div>
-										<div class="summary__col summary__col--right">R 20 800.00</div>
-									</div>
-									<div class="summary__row fw-bold bg-gray">
-										<div class="summary__col">Balance Due</div>
-										<div class="summary__col summary__col--right">R 20 800.00</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="grey-line mt-4 mb-4"></div>
-
-							<div class="form-row form-row-details">
-								<div class="form-row__col">
-									<div class="form-row__label fw-semibold">Banking Details</div>
-									<div class="details">
-										<div class="details__row">
-											<div class="details__col text-nowrap fw-semibold">Account Name :</div>
-											<div class="details__col">Guy Hawkins</div>
-										</div>
-										<div class="details__row">
-											<div class="details__col text-nowrap fw-semibold">Bank Name :</div>
-											<div class="details__col">Citybank</div>
-										</div>
-										<div class="details__row">
-											<div class="details__col text-nowrap fw-semibold">Account No :</div>
-											<div class="details__col">0031 618-18</div>
-										</div>
-										<div class="details__row">
-											<div class="details__col central-text fw-semibold">Reference :</div>
-											<div class="details__col">001</div>
-										</div>
-										<div class="details__row">
-											<a href="#" class="fw-semibold">Edit Details</a>
-										</div>
-									</div>
-								</div>
-								<div class="form-row__col">
-									<div class="form-row__label fw-semibold">Contact Details</div>
-									<div class="details">
-										<div class="details__row">
-											guihawkins@gmail.com
-										</div>
-										<div class="details__row">
-											072 950 2307
-										</div>
-										<div class="details__row">
-											<a href="#" class="fw-semibold">Edit Details</a>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="created fw-medium mobile-align-right">
-								Created at <a href="https://www.invoicelegal.com" target="_blank">www.invoicelegal.com</a>
-							</div>
-
+		<div class="row">
+			<!-- Left Column -->
+			<div class="col-xl-9 col-lg-8 col-12 mb-4 mb-4">
+				<div class="content-block blue-border rounded">
+					<div class="top-line d-flex justify-content-between align-items-start border-bottom pb-3 mb-3 top-line--invoice">
+						<div class="top-line__col fw-medium">
+							<img class="logo-company" src="img/logo-company.svg" alt="company">
 						</div>
+						<div class="top-line__col fw-medium">
+							<div class="top-line__title">INVOICE</div>
 
+							<div class="invoice-info fw-medium">
+								<div class="invoice-info__row">
+									<div class="invoice-info__col fw-semibold">Invoice :</div>
+									<div class="invoice-info__col">001</div>
+								</div>
+								<div class="invoice-info__row">
+									<div class="invoice-info__col fw-semibold">Due date :</div>
+									<div class="invoice-info__col">11.02.2023</div>
+								</div>
+								<div class="invoice-info__row">
+									<div class="invoice-info__col fw-semibold">Inv date :</div>
+									<div class="invoice-info__col">15.01.2023</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
+					<div class="invoice-row">
+						<div class="invoice-row__col fw-medium">
+							<div class="invoice-row__label fw-medium">From :</div>
+							<p><strong>Guy Hawkins</strong></p>
+							<p>220 Dey Street</p>
+							<p>Pretoria</p>
+							<p>00081</p>
+							<p>VAT No : 000816</p>
+						</div>
+						<div class="invoice-row__col fw-medium">
+							<div class="invoice-row__label fw-medium">To :</div>
+							<p><strong>Harobit Tech</strong></p>
+							<p>ROB Boulevard</p>
+							<p>5th Floor</p>
+						</div>
+					</div>
+
+					<div class="central-text fw-semibold">
+						Re: Guy Hawkins // Code Case No: 661
+					</div>
+
+					<div class="grey-line mb-4"></div>
+
+					<div class="wrapper-scroll">
+						<table class="table table-create-invoice table-invoice">
+							<thead class="fw-semibold">
+								<tr>
+									<th>Date</th>
+									<th>Description</th>
+									<th>Rate</th>
+									<th>Hrs</th>
+									<th>Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										11.05.2014
+									</td>
+									<td>
+										Consulting with client
+									</td>
+									<td class="text-nowrap">
+										R 200.00
+									</td>
+									<td class="text-nowrap">
+										1 : 00
+									</td>
+									<td class="text-nowrap">
+										R 200.00
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										14.05.2014
+									</td>
+									<td>
+										Afterday consult
+									</td>
+									<td class="text-nowrap">
+										R 20 000.00
+									</td>
+									<td class="text-nowrap">
+										1 Day
+									</td>
+									<td class="text-nowrap">
+										R 20 000.00
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										15.05.2021
+									</td>
+									<td>
+										Reason for not making payment in respect of those invoices was due to the fact that the plaintiff did not perform or render any services
+									</td>
+									<td class="text-nowrap">
+										R 250.00
+									</td>
+									<td class="text-nowrap">
+										2 : 00
+									</td>
+									<td class="text-nowrap">
+										R 500.00
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										16.05.2021
+									</td>
+									<td>
+										Petrol
+									</td>
+									<td class="text-nowrap">
+										R 100.00
+									</td>
+									<td class="text-nowrap">
+										-
+									</td>
+									<td class="text-nowrap">
+										R 100.00
+									</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 
 
-					<div class="content__col content__col--narrow">
 
-						<div class="content-block rounded" data-da="#all-actions,768,0">
-
-							<div class="invoice-menu">
-								<ul>
-									<li class="fw-medium">
-										<img src="img/icon-edit.svg" alt="">
-										<span>Edit Invoice</span>
-									</li>
-									<li class="fw-medium">
-										<img src="img/icon-download.svg" alt="">
-										<span>Download Invoice</span>
-									</li>
-									<li class="fw-medium">
-										<img src="img/icon-preview.svg" alt="">
-										<span>PDF Preview</sp </li>
-									<li class="fw-medium">
-										<img src="img/icon-send-invoice.svg" alt="">
-										<span>Send Invoice</span>
-									</li>
-									<li class="fw-medium">
-										<img src="img/icon-record-payment.svg" alt="">
-										<span>Record Payment</span>
-									</li>
-									<li class="fw-medium">
-										<img src="img/icon-activity.svg" alt="">
-										<span>Activity</span>
-									</li>
-									<li class="fw-medium">
-										<img src="img/icon-delete-invoice.svg" alt="">
-										<span>Delete Invoice</span>
-									</li>
-								</ul>
+					<div class="summary mt-4">
+						<div class="summary__content">
+							<div class="summary__row fw-medium">
+								<div class="summary__col">Sub Total</div>
+								<div class="summary__col summary__col--right">R 20 800.00</div>
 							</div>
-
+							<div class="summary__row fw-medium">
+								<div class="summary__col">VAT 0%</div>
+								<div class="summary__col summary__col--right">R 0.00</div>
+							</div>
+							<div class="grey-line"></div>
+							<div class="summary__row fw-bold">
+								<div class="summary__col">Total</div>
+								<div class="summary__col summary__col--right">R 20 800.00</div>
+							</div>
+							<div class="summary__row fw-bold bg-gray">
+								<div class="summary__col">Balance Due</div>
+								<div class="summary__col summary__col--right">R 20 800.00</div>
+							</div>
 						</div>
-
-
 					</div>
 
+					<div class="grey-line mt-4 mb-4"></div>
+
+					<div class="form-row form-row-details">
+						<div class="form-row__col">
+							<div class="form-row__label fw-semibold">Banking Details</div>
+							<div class="details">
+								<div class="details__row">
+									<div class="details__col text-nowrap fw-semibold">Account Name :</div>
+									<div class="details__col">Guy Hawkins</div>
+								</div>
+								<div class="details__row">
+									<div class="details__col text-nowrap fw-semibold">Bank Name :</div>
+									<div class="details__col">Citybank</div>
+								</div>
+								<div class="details__row">
+									<div class="details__col text-nowrap fw-semibold">Account No :</div>
+									<div class="details__col">0031 618-18</div>
+								</div>
+								<div class="details__row">
+									<div class="details__col central-text fw-semibold">Reference :</div>
+									<div class="details__col">001</div>
+								</div>
+								<div class="details__row">
+									<a href="#" class="fw-semibold">Edit Details</a>
+								</div>
+							</div>
+						</div>
+						<div class="form-row__col">
+							<div class="form-row__label fw-semibold">Contact Details</div>
+							<div class="details">
+								<div class="details__row">
+									guihawkins@gmail.com
+								</div>
+								<div class="details__row">
+									072 950 2307
+								</div>
+								<div class="details__row">
+									<a href="#" class="fw-semibold">Edit Details</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="created fw-medium mobile-align-right">
+						Created at <a href="https://www.invoicelegal.com" target="_blank">www.invoicelegal.com</a>
+					</div>
 				</div>
 			</div>
-		</section>
-		<!-- End of SECTION CONTENT -->
+
+			<!-- Right Column -->
+			<div class="col-xl-3 col-lg-4 col-12">
+				<div class="content-block rounded" data-da="#all-actions,768,0">
+					<div class="invoice-menu">
+						<ul>
+							<li>
+								<img src="img/icon-edit.svg" alt="">
+								<span class="fw-medium">Edit Invoice</span>
+							</li>
+							<li>
+								<img src="img/icon-download.svg" alt="">
+								<span class="fw-medium">Download Invoice</span>
+							</li>
+							<li>
+								<img src="img/icon-preview.svg" alt="">
+								<span class="fw-medium">PDF Preview</span>
+							</li>
+							<li>
+								<img src="img/icon-send-invoice.svg" alt="">
+								<span class="fw-medium">Send Invoice</span>
+							</li>
+							<li>
+								<img src="img/icon-record-payment.svg" alt="">
+								<span class="fw-medium">Record Payment</span>
+							</li>
+							<li>
+								<img src="img/icon-activity.svg" alt="">
+								<span class="fw-medium">Activity</span>
+							</li>
+							<li>
+								<img src="img/icon-delete-invoice.svg" alt="">
+								<span class="fw-medium">Delete Invoice</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 
@@ -759,8 +746,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js?_v=20241102205321" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20241102205321"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js?_v=20241103151104" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20241103151104"></script>
 </body>
 
 </html>
