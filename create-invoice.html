@@ -5,8 +5,8 @@
 	<title>Create Invoice</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css?_v=20241103151104" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241103151104">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css?_v=20241103205225" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241103205225">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -20,14 +20,14 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<a href="/home.html" class="navbar-brand">
-				<img src="img/logo.svg" alt="Logo" width="96" height="58">
+			<a href="/home.html" class="navbar-brand navbar-brand-custom d-flex align-items-center justify-content-center">
+				<img src="img/logo.svg" alt="Logo">
 			</a>
 
 			<div class="offcanvas offcanvas-start bg-dark text-white" tabindex="-1" id="navbarMenu">
 				<div class="offcanvas-header">
-					<a href="/home.html" class="navbar-brand">
-						<img src="img/logo.svg" alt="Logo" width="96" height="58">
+					<a href="/home.html" class="navbar-brand navbar-brand-custom d-flex align-items-center justify-content-center">
+						<img src="img/logo.svg" alt="Logo">
 					</a>
 					<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 				</div>
@@ -185,7 +185,7 @@
 							<div class="form-row__col">
 								<div class="form-row__label fw-semibold">From :</div>
 								<textarea class="d-none d-md-block fw-medium" data-bs-toggle="modal" data-bs-target="#enterYourDetails" name="from" id="from" cols="30" rows="7" placeholder="Enter Your Details"></textarea>
-								<a class="mobile-element" href="enter-your-details.html" class="button">
+								<a class="d-block d-md-none" href="enter-your-details.html" class="button">
 									<div class="enter-details-button rounded fw-medium">
 										Enter Your Details
 									</div>
@@ -194,16 +194,16 @@
 							<div class="form-row__col">
 								<div class="form-row__label fw-semibold">To :</div>
 								<textarea class="d-none d-md-block fw-medium" data-bs-toggle="modal" data-bs-target="#enterClientDetails" name="to" id="to" cols="30" rows="7" placeholder="Enter Client Details"></textarea>
-								<a class="mobile-element" href="enter-client-details.html" class="button">
+								<a class="d-block d-md-none" href="enter-client-details.html" class="button">
 									<div class="enter-details-button rounded fw-medium">
 										Enter Client Details
 									</div>
 								</a>
 							</div>
 
-							<div class="form-row__col mobile-element">
+							<div class="form-row__col d-block d-md-none">
 								<div class="form-row__label fw-semibold">Invoice Details :</div>
-								<a class="mobile-element" href="enter-invoice-details.html" class="button">
+								<a class="d-block d-md-none" href="enter-invoice-details.html" class="button">
 									<div class="enter-details-button rounded fw-medium">
 										Enter Invoice Details
 									</div>
@@ -229,7 +229,7 @@
 							<div class="form-row mb-4">
 								<div class="form-row__col">
 									<div class="form-row__label fw-semibold">Invoice Due</div>
-									<select name="invoice-due" class="form-select select-in-form">
+									<select name="invoice-due" class="form-select select-in-form rounded">
 										<option value="0" selected>Select One</option>
 										<option value="7">7 Days</option>
 										<option value="30">30 Days</option>
@@ -321,20 +321,24 @@
 								</tbody>
 							</table>
 
-							<div class="grey-line mt-4 mb-4 mobile-display-none"></div>
+							<div class="grey-line mt-4 mb-4 d-none d-md-block"></div>
 
-							<div class="new-row-wrapper">
-								<div class="blue-button d-flex justify-content-center align-items-center fw-semibold new-row d-none d-md-flex"><img src="img/icon-plus.svg" alt=""> <span>New Row</span></div>
-								<div class="new-row__items-wrapper d-none d-md-block">
-									<div class="new-row__items rounded">
-										<div class="new-row__item fw-medium">Time Based Billing</div>
-										<div class="new-row__item fw-medium">Fixed amount Billing</div>
-										<div class="new-row__item fw-medium">Date 1 to Date 2 Billing</div>
-										<div class="new-row__item fw-medium">Expense/Disbursement</div>
+							<div class="dropdown-new-row dropdown">
+								<div data-bs-toggle="dropdown" class="blue-button d-flex justify-content-center align-items-center fw-semibold new-row d-none d-md-flex"><img src="img/icon-plus.svg" alt=""> <span>New Row</span></div>
+								<div class="dropdown-menu">
+									<div class=" new-row__items-wrapper d-none d-md-block">
+										<div class="new-row__items rounded">
+											<div class="new-row__item fw-medium">Time Based Billing</div>
+											<div class="new-row__item fw-medium">Fixed amount Billing</div>
+											<div class="new-row__item fw-medium">Date 1 to Date 2 Billing</div>
+											<div class="new-row__item fw-medium">Expense/Disbursement</div>
+										</div>
 									</div>
 								</div>
 
-								<a href="enter-new-row.html" class="blue-button rounded d-flex justify-content-center align-items-center fw-semibold new-row mobile-element-flex"><img src="img/icon-plus.svg" alt=""> <span>Add New Row</span></a>
+
+
+								<a href="enter-new-row.html" class="blue-button rounded d-flex justify-content-center align-items-center fw-semibold new-row d-flex d-md-none"><img src="img/icon-plus.svg" alt=""> <span>Add New Row</span></a>
 							</div>
 
 							<div class="grey-line d-none d-md-block mt-4 mb-4"></div>
@@ -367,7 +371,7 @@
 								<div class="form-row__col">
 									<div class="form-row__label fw-semibold">Banking Details</div>
 									<input data-bs-toggle="modal" data-bs-target="#enterBankingDetails" autocomplete="off" type="text" name="banking-details" placeholder="Enter Banking Details" class="input fw-medium d-none d-md-block">
-									<a class="mobile-element" href="enter-client-details.html" class="button">
+									<a class="d-block d-md-none" href="enter-client-details.html" class="button">
 										<div class="enter-details-button rounded fw-medium">
 											Enter Banking Details
 										</div>
@@ -410,7 +414,7 @@
 							<div class="choice-of-currency">
 								<div class="choice-of-currency__label fw-semibold">Currency</div>
 								<div class="choice-of-currency__select rounded rounded">
-									<select name="select-currency" class="form-select select-in-form">
+									<select name="select-currency" class="form-select select-in-form rounded">
 										<option value="ZAR" selected>ZAR</option>
 										<option value="Euro">Euro</option>
 										<option value="Dollar">Dollar</option>
@@ -539,14 +543,12 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
 
 					<div class="modal-title fw-bold">
 						<img src="img/icon-time.svg" alt=""> Enter Time Spent
 					</div>
 					<button type="button" data-bs-dismiss="modal" type="button" class="popup__close" aria-label="Close">
-						<img src="img/icon-close.svg" alt="close">
+						<img src="img/icon-close-black.svg" alt="close">
 					</button>
 				</div>
 				<div class="modal-body">
@@ -746,8 +748,8 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js?_v=20241103151104" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20241103151104"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js?_v=20241103205225" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20241103205225"></script>
 </body>
 
 </html>

@@ -1,4 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap);
+.fw-normal {
+  font-weight: 400
+}
+.fw-medium {
+  font-weight: 500
+}
+.fw-semibold {
+  font-weight: 600
+}
+.fw-bold {
+  font-weight: 700
+}
+.fw-extrabold {
+  font-weight: 800
+}
+.fw-black {
+  font-weight: 900
+}
 * {
   padding: 0;
   margin: 0;
@@ -73,7 +91,8 @@ h6 {
   font-size: inherit
 }
 body {
-  background-color: #f1f2f6
+  background-color: #f1f2f6;
+  color: #485d6b
 }
 .lock body {
   overflow: hidden;
@@ -221,6 +240,12 @@ body {
   -webkit-transform: scale(1.3);
   transform: scale(1.3)
 }
+h1 {
+  margin-bottom: 0
+}
+select {
+  padding-left: 8px
+}
 select:focus {
   border-color: inherit;
   outline: 0;
@@ -237,7 +262,7 @@ select:focus {
 }
 .main-container {
   padding-top: 5.1875rem;
-  padding-bottom: 5.1875rem
+  padding-bottom: 1.875rem
 }
 .rounded {
   border-radius: 4px!important
@@ -433,26 +458,17 @@ textarea:focus {
   gap: .4375rem;
   cursor: pointer
 }
+.grey-button {
+  font-size: .8125rem
+}
 .grey-line {
   width: 100%;
   height: 1px;
   background-color: #f7f7f7
 }
-.nowrap {
-  white-space: nowrap
-}
-.text-end {
-  text-align: right!important
-}
 p {
   line-height: 160%;
   margin-bottom: .3125rem
-}
-.mobile-element {
-  display: block!important
-}
-.mobile-element-flex {
-  display: flex!important
 }
 .logo-company {
   max-width: 185px;
@@ -501,6 +517,15 @@ p {
   align-items: center;
   gap: 2.0625rem;
   position: relative
+}
+.navbar-brand-custom {
+  flex: 0 0 96px;
+  min-width: 96px;
+  width: 96px;
+  height: 60px
+}
+.navbar-brand-custom img {
+  max-width: 100%
 }
 .nav-item {
   padding: 0 .8125rem;
@@ -719,7 +744,9 @@ p {
   object-fit: cover
 }
 .navbar-toggler .navbar-toggler-icon {
-  background: url(../img/menu-button.svg) 0 0 no-repeat
+  width: 2.5em;
+  height: 2.5em;
+  background: url(../img/menu-button.svg) 0 0/100% no-repeat
 }
 .content-block {
   padding: 2.0625rem 1.5625rem 1.5625rem;
@@ -739,7 +766,6 @@ p {
   margin: .25rem .5rem .25rem .5rem
 }
 .top-line__amount {
-  text-align: right;
   font-size: 1.25rem
 }
 .button-create-invoice {
@@ -838,13 +864,17 @@ p {
 .content-block-2__col {
   flex: 0 1 50%
 }
+.select_form {
+  display: flex;
+  align-items: center
+}
 .content-block-2__col--right {
   display: flex;
   justify-content: flex-end
 }
 .set-target {
   display: block;
-  padding: 0 0 .25rem;
+  padding: 0 0 .125rem;
   font-size: .9375rem;
   cursor: pointer
 }
@@ -984,7 +1014,8 @@ p {
 .table {
   width: 100%;
   border-spacing: 0;
-  border-pb-2apse: pb-2apse
+  border-collapse: collapse;
+  color: #485d6b!important
 }
 .table thead {
   background-color: #f1f2f6;
@@ -1318,22 +1349,21 @@ p {
   font-size: .75rem;
   padding: .4375rem .75rem
 }
+.dropdown-new-row .dropdown-menu {
+  border: initial!important;
+  padding: 0!important
+}
 .new-row__items-wrapper {
   padding: 0;
-  overflow: hidden;
-  margin-top: .375rem;
-  height: 0;
-  position: absolute
+  margin-top: .1875rem;
+  margin-bottom: .1875rem;
+  background-color: rgba(0,0,0,0)!important
 }
 .new-row__items {
   background-color: #7715cd;
   box-shadow: 0 .375rem .875rem 0 rgba(0,0,0,.1);
   width: 11.1875rem;
-  padding: .375rem 0;
-  opacity: .5;
-  -webkit-transform: translate(0,-100vh);
-  transform: translate(0,-100vh);
-  transition: all .3s ease 0s
+  padding: .375rem 0
 }
 .new-row__item {
   width: 100%;
@@ -1348,14 +1378,6 @@ p {
 }
 .new-row__item:not(:last-child) {
   border-bottom: .5px solid #f7f7f7
-}
-.new-row-wrapper._open .new-row__items {
-  opacity: 1;
-  -webkit-transform: translate(0,0);
-  transform: translate(0,0)
-}
-.new-row-wrapper._open .new-row__items-wrapper {
-  height: auto
 }
 .TimePick_POPUP .second {
   display: none
@@ -1633,7 +1655,7 @@ body.the-datepicker-page {
   text-align: center
 }
 .the-datepicker__main select.the-datepicker__select {
-  font-size: .9em;
+  font-size: 1em;
   margin: 0;
   padding: 0;
   background-color: #fff;
@@ -2108,12 +2130,6 @@ body.the-datepicker-page {
   .blue-border {
     border-top: .4375rem solid #7715cd
   }
-  .mobile-element {
-    display: none!important
-  }
-  .mobile-element-flex {
-    display: none!important
-  }
 }
 @media (min-width:61.99875em) {
   .offcanvas .dropdown-menu li:not(:last-child) .dropdown-item {
@@ -2208,6 +2224,10 @@ body.the-datepicker-page {
   }
   .header__logo {
     margin-left: 2.625rem
+  }
+  .navbar-brand-custom {
+    -webkit-transform: translate(35px,0);
+    transform: translate(35px,0)
   }
   .nav-item {
     font-size: .875rem;
@@ -2336,15 +2356,16 @@ body.the-datepicker-page {
     padding: .6875rem 1.0625rem;
     font-size: .75rem
   }
+  .grey-button {
+    padding: .6875rem 1.0625rem;
+    font-size: .75rem
+  }
   .mob-to-center {
     margin-left: auto;
     margin-right: auto
   }
   p {
     font-size: .6875rem
-  }
-  .mobile-display-none {
-    display: none
   }
   .mobile-align-right {
     text-align: right!important
@@ -2367,6 +2388,12 @@ body.the-datepicker-page {
   }
   .menu-header__right-col {
     gap: 1.5625rem
+  }
+  .navbar-brand-custom {
+    flex: 0 0 88px;
+    min-width: 88px;
+    width: 88px;
+    height: 55px
   }
   .nav-item {
     font-size: .8125rem
@@ -2496,7 +2523,7 @@ body.the-datepicker-page {
     margin-bottom: 1.5625rem
   }
   .add-note {
-    justify-content: flex-start
+    justify-content: flex-start!important
   }
   .created {
     margin-top: 2.375rem;
@@ -2610,9 +2637,9 @@ body.the-datepicker-page {
     transform: translate3d(-3px,50px,0)!important
   }
   .all-notifications {
-    width: calc(100vw - 1.875rem);
-    min-width: calc(100vw - 1.875rem);
-    max-width: calc(100vw - 1.875rem);
+    width: calc(100vw - 2.3125rem);
+    min-width: calc(100vw - 2.3125rem);
+    max-width: calc(100vw - 2.3125rem);
     right: 0;
     -webkit-transform: translate3d(37px,45px,0)!important;
     transform: translate3d(37px,45px,0)!important
@@ -2716,9 +2743,9 @@ body.the-datepicker-page {
     min-width: 3.9375rem
   }
   #all-actions {
-    width: calc(100vw - 1.875rem);
-    min-width: calc(100vw - 1.875rem);
-    max-width: calc(100vw - 1.875rem)
+    width: calc(100vw - 1.5rem);
+    min-width: calc(100vw - 1.5rem);
+    max-width: calc(100vw - 1.5rem)
   }
 }
 @media (any-hover:hover) {
