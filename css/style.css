@@ -2137,6 +2137,9 @@ body.the-datepicker-page {
   }
 }
 @media (min-width:61.99875em) {
+  .dropdown-menu .dropdown-item {
+    font-size: 15px
+  }
   .offcanvas .dropdown-menu li:not(:last-child) .dropdown-item {
     border-bottom: .5px solid #f7f7f7
   }
