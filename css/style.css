@@ -749,13 +749,14 @@ p {
   background: url(../img/menu-button.svg) 0 0/100% no-repeat
 }
 .content-block {
-  padding: 2.0625rem 1.5625rem 1.5625rem;
+  padding: 1.5625rem 1.5625rem 1.5625rem;
   background-color: #fff
 }
 .top-line__title {
   line-height: 100%;
   color: #485d6b;
-  font-size: 1.25rem
+  font-size: 1.1875rem;
+  padding-top: 10px
 }
 .top-line__select {
   margin-left: 1.5625rem;
@@ -849,7 +850,8 @@ p {
   text-align: center;
   margin-bottom: 1.5625rem;
   color: #485d6b;
-  font-size: 1.25rem
+  font-size: 1.1875rem;
+  padding-top: 10px
 }
 .content-block-2__subtitle {
   line-height: 100%;
@@ -883,6 +885,9 @@ p {
   border-bottom: 1px solid #e3e5ed;
   margin-bottom: 1.5625rem
 }
+.content-block-3 .top-line .top-line__title {
+  padding-top: 0
+}
 .view-all {
   font-size: .8125rem;
   line-height: 160%;
@@ -895,7 +900,7 @@ p {
   color: #485d6b;
   padding-bottom: 1.5625rem;
   border-bottom: 1px solid #f7f7f7;
-  font-size: 1.25rem
+  font-size: 1.1875rem
 }
 .five-clients {
   margin-bottom: 1rem
@@ -2202,6 +2207,25 @@ body.the-datepicker-page {
     width: 100%
   }
 }
+@media (min-width:992px) {
+  .container {
+    max-width: 920px
+  }
+}
+@media (min-width:1200px) {
+  .container {
+    max-width: 1130px
+  }
+  .h1,
+  h1 {
+    font-size: 24px
+  }
+}
+@media (min-width:1400px) {
+  .container {
+    max-width: 1195px
+  }
+}
 @media (max-width:1300px) {
   .content-block {
     padding: 1.5625rem 1.5625rem 1.0625rem
@@ -2269,7 +2293,7 @@ body.the-datepicker-page {
     background-color: #29353d
   }
   .top-line__title {
-    font-size: 1.0625rem
+    font-size: 1.125rem
   }
   .top-line__select {
     margin-top: -.5rem!important
@@ -2406,7 +2430,7 @@ body.the-datepicker-page {
   }
   .top-line__title {
     margin-top: .25rem;
-    font-size: 1rem
+    font-size: 1.0625rem
   }
   .top-line__title--main {
     text-align: center;
