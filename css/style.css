@@ -278,6 +278,14 @@ select:focus {
   line-height: 120%;
   text-align: center
 }
+.nav-item .bage-circle {
+  position: relative!important;
+  left: initial!important;
+  top: initial!important;
+  -webkit-transform: initial!important;
+  transform: initial!important;
+  margin-left: 10px
+}
 .main-title__title {
   line-height: 100%;
   color: #485d6b;
@@ -2238,14 +2246,6 @@ body.the-datepicker-page {
   }
 }
 @media (max-width:61.99875em) {
-  .nav-item .bage-circle {
-    position: relative!important;
-    left: initial!important;
-    top: initial!important;
-    -webkit-transform: initial!important;
-    transform: initial!important;
-    margin-left: 12px
-  }
   .main-title__title {
     font-size: 24px
   }
