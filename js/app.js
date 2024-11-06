@@ -3590,13 +3590,6 @@
             if (vatStep2Element) vatStep2Element.classList.add("_open");
         }));
     }));
-    const pageElement = document.querySelector(".page");
-    if (pageElement) pageElement.addEventListener("click", (function() {
-        const allNotificationsElement = document.querySelector(".all-notifications");
-        const profileMenuElement = document.querySelector(".profile-menu");
-        if (allNotificationsElement) allNotificationsElement.classList.remove("_open");
-        if (profileMenuElement) profileMenuElement.classList.remove("_open");
-    }));
     document.addEventListener("DOMContentLoaded", (() => {
         const buttonLogin = document.querySelector(".button-login");
         const buttonSignUp = document.querySelector(".button-sign-up");
@@ -3621,6 +3614,41 @@
                 showForm(forgotPasswordForm);
             }));
         } else console.error("One or more elements are missing on the page.");
+    }));
+    document.addEventListener("DOMContentLoaded", (function() {
+        const dropdown = document.querySelector(".nav-item.dropdown");
+        if (dropdown) {
+            dropdown.addEventListener("mouseenter", (function() {
+                const dropdownLink = this.querySelector(".dropdown-toggle");
+                const dropdownMenu = this.querySelector(".dropdown-menu");
+                if (dropdownLink && dropdownMenu) {
+                    dropdown.classList.add("show");
+                    dropdownLink.classList.add("show");
+                    dropdownLink.setAttribute("aria-expanded", "true");
+                    dropdownMenu.classList.add("show");
+                    dropdownMenu.style.position = "absolute";
+                    dropdownMenu.style.inset = "0px auto auto 0px";
+                    dropdownMenu.style.margin = "0px";
+                    dropdownMenu.style.transform = "translate3d(13px, 38px, 0px)";
+                    dropdownMenu.setAttribute("data-popper-placement", "bottom-start");
+                }
+            }));
+            dropdown.addEventListener("mouseleave", (function() {
+                const dropdownLink = this.querySelector(".dropdown-toggle");
+                const dropdownMenu = this.querySelector(".dropdown-menu");
+                if (dropdownLink && dropdownMenu) {
+                    dropdown.classList.remove("show");
+                    dropdownLink.classList.remove("show");
+                    dropdownLink.setAttribute("aria-expanded", "false");
+                    dropdownMenu.classList.remove("show");
+                    dropdownMenu.style.position = "";
+                    dropdownMenu.style.inset = "";
+                    dropdownMenu.style.margin = "";
+                    dropdownMenu.style.transform = "";
+                    dropdownMenu.removeAttribute("data-popper-placement");
+                }
+            }));
+        }
     }));
     window["FLS"] = false;
 })();
